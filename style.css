@@ -1,0 +1,159 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.full-view {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+        "login img";
+}
+
+.login-container {
+    grid-area: login;
+    background-color: black;
+}
+
+.side-img {
+    grid-area: img;
+}
+
+.main-img {
+    height: 100%;
+    width: 100%;
+}
+
+.logo {
+    display: flex;
+    background-color: black;
+    padding-top: 2em;
+    padding-left: 2em;
+}
+
+.logo-img {
+    height: 3em;
+    margin-right: 0.5em;
+}
+
+h1 {
+    margin: 0;
+    padding: 0.5em 0;
+    font-size: 1em;
+    align-content: end;
+}
+
+h1, h2, h3, p {
+    color: whitesmoke;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    margin: 10em 5em;
+    background-color: #171205;
+    padding: 3em 5em;
+    border-radius: 5px;
+}
+
+.log-in-logo {
+    display: flex;
+}
+
+.login-icon {
+    padding-right: 0.5em;
+}
+
+.log-in-logo h2 {
+    display: block;
+}
+
+.email-section {
+    display: inline-block;
+}
+
+h3 {
+    font-weight: 00;
+    font-size: 0.9em;
+    margin: 0.2em 0;
+}
+
+.email-form, .password-form {
+    display: flex;
+    border: solid 2px grey;
+    border-radius: 4px;
+    padding: 0.3em;
+    width: 28em;
+    margin-bottom: 1em;
+}
+
+.email-img, .lock-icon, .eye-icon {
+    width: 1em;
+    padding: 0.2em;
+}
+
+.email-text, .password-text {
+    margin: 0;
+    font-size: 0.75em;
+    font-weight: 100;
+    align-content:  center;
+}
+
+.eye-icon {
+    display: block;
+    right: 0;
+}
+
+.remindme-section {
+    display: flex;
+    margin-bottom: 1em;
+}
+
+.remindme-section p {
+    display: flex;
+    margin: 0;
+    font-size: 0.8em;
+    font-weight: 100;
+}
+
+.bold {
+    font-weight: 500;
+}
+
+.checked-icon {
+    /* visibility: hidden; */
+    border: solid 1px gray;
+    border-radius: 2px;
+    width: 0.9em;
+    height: 0.9em;
+    padding: 0.1em;
+    margin-right: 0.4em;
+}
+
+.loging-button {
+    display: flex;
+    flex-direction: row;
+}
+
+.login-button p {
+    color: gold;
+}
+
+button {
+    background-color: gold;
+    border-style: none;
+    padding: 1em ;
+    font-weight: 800;
+    width: 100%
+}
+
+.login-button-text {
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
