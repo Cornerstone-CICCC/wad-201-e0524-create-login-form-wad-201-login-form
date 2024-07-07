@@ -41,13 +41,15 @@
               <div class="d-flex flex-column">
                 <label for="password">Password</label>
                 <div class="div-input-password">
-                  <input class="input-password" maxlength="40" type="password" placeholder="Type your password">
+                  <input id="password_input" class="input-password" minlength="8" maxlength="40" type="password" placeholder="Type your password" pattern="[a-zA-Z0-9]{8,40}">
+                  <div id="eye_icon_box" class="eye-icon-box"></div>
                 </div>
               </div>
               <div class="forgot-section">
-                <div class="remember-me-container">
-                  <img src="./images/check.svg" alt="check-image" class="check-checked d-none">
-                  <div class="check"></div>
+                <div class="remember-me-container" id="remember_me_container">
+                  <img src="./images/check.svg" alt="check-image" id="check_checked" class="check-checked d-none">
+                  <div class="check" id="check"></div>
+                  <input type="hidden" value="0" id="check_input_hidden">
                   <label for="remember_me" class="remember-me-text"> Remind me</label>
                 </div>
                 <div class="forgot-password-container">
@@ -71,5 +73,6 @@
       
     </div>
 
+      <script src="./scripts.js"></script>
   </body>
 </html>
