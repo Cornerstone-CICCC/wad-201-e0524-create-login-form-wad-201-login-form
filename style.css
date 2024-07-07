@@ -10,11 +10,12 @@ body {
     grid-template-columns: 1fr 1fr;
     grid-template-areas: 
         "login img";
+    box-sizing: border-box;
 }
 
 .login-container {
     grid-area: login;
-    background-color: black;
+    background-color:  #1c1c1b;
 }
 
 .side-img {
@@ -28,7 +29,7 @@ body {
 
 .logo {
     display: flex;
-    background-color: black;
+    background-color: #1c1c1b;
     padding-top: 2em;
     padding-left: 2em;
 }
@@ -52,10 +53,12 @@ h1, h2, h3, p {
 .login-form {
     display: flex;
     flex-direction: column;
-    margin: 10em 5em;
-    background-color: #171205;
-    padding: 3em 5em;
+    margin: 6em 5em;
+    background-color: #363632;
+    padding: 3em;
+    padding-left: 7em;
     border-radius: 5px;
+    box-sizing: border-box;
 }
 
 .log-in-logo {
@@ -68,14 +71,16 @@ h1, h2, h3, p {
 
 .log-in-logo h2 {
     display: block;
+    margin: 0.2em;
 }
 
-.email-section {
-    display: inline-block;
+.login-text {
+    margin-top: 0;
+    margin-bottom: 2em;
 }
 
 h3 {
-    font-weight: 00;
+    font-weight: 500;
     font-size: 0.9em;
     margin: 0.2em 0;
 }
@@ -85,7 +90,7 @@ h3 {
     border: solid 2px grey;
     border-radius: 4px;
     padding: 0.3em;
-    width: 28em;
+    width: 80%;
     margin-bottom: 1em;
 }
 
@@ -102,7 +107,7 @@ h3 {
 }
 
 .eye-icon {
-    display: block;
+    display: flex;
     right: 0;
 }
 
@@ -111,15 +116,20 @@ h3 {
     margin-bottom: 1em;
 }
 
-.remindme-section p {
+.remindme-section .normal {
     display: flex;
     margin: 0;
     font-size: 0.8em;
     font-weight: 100;
 }
 
-.bold {
+.remindme-section .bold {
+    display: flex;
+    margin: 0;
+    font-size: 0.8em;
     font-weight: 500;
+    color: gold;
+    padding-left: 35%;
 }
 
 .checked-icon {
@@ -144,14 +154,20 @@ h3 {
 button {
     background-color: gold;
     border-style: none;
+    border-radius: 3px;
     padding: 1em ;
     font-weight: 800;
-    width: 100%
+    width: 83%
 }
 
-.login-button-text {
-    justify-content: center;
-    align-items: center;
+.login-button p {
+    padding-left: 5em;
+    font-weight: 100;
+    font-size: 0.9em;
+}
+
+.login-button .bold {
+    font-weight: 500;
 }
 
 
