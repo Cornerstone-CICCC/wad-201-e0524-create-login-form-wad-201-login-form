@@ -1,0 +1,32 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    // font-size: $fontsize;
+    // overflow-y: hidden;
+    overflow-x: visible;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    // width: 100vw; 
+}
+
+body{
+    width: 100vw;
+    height: 500px;
+    // display: grid;
+    // grid-template-columns: 1fr 1fr;
+    // grid-template-areas: "formSection imageSection";
+}
+
+.mainContent{
+    // grid-area: formSection;
+    border: 1px red solid;
+    height: 500px;
+}
+
+.secondaryImage{
+    // grid-area: imageSection;
+    border: 1px green solid;
+
+}
