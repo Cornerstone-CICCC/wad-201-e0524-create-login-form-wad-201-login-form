@@ -1,0 +1,283 @@
+:root {
+    --text-base: #afb6c2;
+    --text-title: #d4ccb6;
+    --background: #191816;
+    --form-background: #24221f;
+    --primary-color: #ffc632;
+    --focus-color: #CEAD58;
+}
+html, body {
+    padding: 0;
+    margin: 0;
+    background-color: var(--background);
+    font-family: 'Poppins';
+    font-size: 14px;
+    color: var(--text-base);
+}
+section {
+    display: grid;
+    height: 100vh;
+}
+input {
+    background-color: transparent;
+    border: solid var(--text-base) 1px;
+    border-radius: 4px;
+    min-height: 30px;
+}
+form {
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.main-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.left-side {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.right-image {
+    object-fit: cover;
+    max-height: 100vh;
+}
+.logo {
+    margin-top: 25px;
+    margin-left:25px;
+    position: absolute;
+}
+.login-background {
+    height: 75%;
+    width: 80%;
+    background-color: var(--form-background);
+    display: flex;
+    flex-direction: column;
+}
+.d-flex {
+    display: flex;
+}
+.flex-column {
+    flex-direction: column;
+}
+.d-none {
+    display: none;
+}
+.login-text {
+    color: var(--text-title);
+    font-size: 20px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+.insert-info {
+    margin-bottom: 30px;
+    font-size: 11px;
+}
+.login-background {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.login-background-inner {
+    width: 65%;
+}
+.form-login-logo {
+    margin-bottom: 5px;
+}
+.login-logo-img {
+    margin-right: 10px;
+}
+
+.button-container {
+    width: 100%;
+    text-align: center;
+}
+.send-button {
+    background-color: var(--primary-color);
+    color: var(--background);
+    border-radius: 4px;
+    min-height: 40px;
+    text-transform: uppercase;
+    font-weight: 600;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+}
+.loading-image {
+    animation: rotate 2s linear infinite;
+}
+.forgot-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+.remember-me-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+.remember-me-text:hover {
+    cursor: pointer;
+}
+.remember-me {
+    accent-color: var(--primary-color);
+}
+.remember-me-text {
+    font-size: 13px;
+    margin-left: 2px;
+}
+.forgot-password-container {
+    color: var(--primary-color);
+    font-size: 12px;
+    font-weight: 500;
+    cursor:pointer;
+}
+.register-link-button {
+    color: var(--primary-color);
+    font-size: 12px;
+    text-align: center;
+    margin-top: 15px;
+}
+.register-link-button-span {
+    color: var(--primary-color);
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.check, .check-checked {
+    border: solid var(--text-base) 1px;
+    border-radius: 3px;
+    width: 15px;
+    height: 15px;
+    margin-right: 3px;
+    cursor: pointer;
+}
+.check-checked.active {
+    background-color: var(--primary-color);
+    border-color: transparent;
+}
+.div-input-email {
+    display: flex;
+    align-items: center;
+}
+.div-input-email::before {
+    content: '';
+    background-image: url("./images/mail.svg");
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    margin-left: 8px;
+    background-size: 80% 80%;
+    background-repeat: no-repeat;
+    margin-top: 4px;
+}
+.div-input-email:focus-within::before {
+    content: '';
+    background-image: url("./images/mail-focus.svg");
+}
+.input-email {
+    padding-left: 35px;
+    color: var(--text-title);
+    width: 100%;
+}
+.input-email:focus {
+    border: solid var(--focus-color) 2px !important;
+    outline: none;
+}
+.div-input-password {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.div-input-password::before {
+    content: '';
+    background-image: url("./images/lock.svg");
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    margin-left: 8px;
+    background-size: 80% 80%;
+    background-repeat: no-repeat;
+    margin-top: 4px;
+}
+.div-input-password:focus-within::before {
+    content: '';
+    background-image: url("./images/lock-focus.svg");
+}
+.eye-icon-box {
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    margin-right: 8px;
+    right: 0;
+}
+.eye-icon-box {
+    content: '';
+    background-image: url("./images/eye.svg");
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    background-size: 80% 80%;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    margin-top: 2px;
+}
+
+.input-password {
+    padding-left: 35px;
+    padding-right: 35px;
+    color: var(--text-title);
+    width: 100%;
+}
+.input-password:focus {
+    border: solid var(--focus-color) 2px;
+    outline: none;
+}
+
+
+@media screen and (max-width:900px) {    
+    .login-background-inner {
+        width: 85%;
+    }
+    .login-background {
+        background-color: transparent;
+        width: 100%;
+    }
+    .left-side {
+        align-items: baseline;
+    }
+    .remember-me-text {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .right-side {
+        display: none;
+    }
+
+    .main-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
