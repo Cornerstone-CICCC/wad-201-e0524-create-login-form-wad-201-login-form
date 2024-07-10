@@ -31,17 +31,17 @@
             <div class="insert-info">
               Insert your information below:
             </div>
-            <form action="">
+            <form id="form">
               <div class="d-flex flex-column">
                 <label for="email">E-mail</label>
                 <div class="div-input-email" tabindex="1">
-                  <input class="input-email" type="email" placeholder="Type your email">
+                  <input required id="email" class="input-email" type="email" placeholder="Type your email" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$">
                 </div>
               </div>
               <div class="d-flex flex-column">
                 <label for="password">Password</label>
                 <div class="div-input-password">
-                  <input id="password_input" class="input-password" minlength="8" maxlength="40" type="password" placeholder="Type your password" pattern="[a-zA-Z0-9]{8,40}">
+                  <input required id="password_input" class="input-password" minlength="8" maxlength="40" type="password" placeholder="Type your password" pattern="[a-zA-Z0-9]{8,40}">
                   <div id="eye_icon_box" class="eye-icon-box"></div>
                 </div>
               </div>
@@ -57,7 +57,11 @@
                 </div>
               </div>
               <div class="button-container">
-                <button class="send-button">Login</button>
+                <button class="send-button" id="send_form_button">
+                  <span id="login-text">Login</span>
+                  <span class="d-none loading">Loading</span>
+                  <span class="d-none loading"><img class="loading-image" src="./images/loading.svg" width="15" height="15" alt="loading"></span>  
+                </button>
               </div>
             </form>
             <div class="register-link-button">

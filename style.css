@@ -105,6 +105,13 @@ form {
     width: 100%;
     border: none;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+}
+.loading-image {
+    animation: rotate 2s linear infinite;
 }
 .forgot-section {
     display: flex;
@@ -214,7 +221,7 @@ form {
     margin-right: 8px;
     right: 0;
 }
-.eye-icon-box::after {
+.eye-icon-box {
     content: '';
     background-image: url("./images/eye.svg");
     position: absolute;
@@ -238,13 +245,7 @@ form {
 }
 
 
-@media screen and (max-width:900px) {
-    .right-side {
-        display: none;
-    }
-    .main-grid {
-        grid-template-columns: 1fr;
-    }
+@media screen and (max-width:900px) {    
     .login-background-inner {
         width: 85%;
     }
@@ -254,5 +255,29 @@ form {
     }
     .left-side {
         align-items: baseline;
+    }
+    .remember-me-text {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .right-side {
+        display: none;
+    }
+
+    .main-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
     }
 }
