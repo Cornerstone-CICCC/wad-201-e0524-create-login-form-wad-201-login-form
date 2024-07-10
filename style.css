@@ -140,6 +140,24 @@ h3 {
     border: 1px solid gray;
 }
 
+.focus-email {
+    border: 2px solid gold;
+    background-image: url("images/mail-focus.svg");
+    background-repeat: no-repeat;
+    background-position: 8px 5px;
+    background-size: 15px;
+    background-color: whitesmoke;
+}
+
+.focus-pass {
+    border: 2px solid gold;
+    background-image: url("images/lock-focus.svg");
+    background-repeat: no-repeat;
+    background-position: 8px 5px;
+    background-size: 15px;
+    background-color: whitesmoke;
+}
+
 .password-form {
     display: flex;
     box-sizing: border-box;
