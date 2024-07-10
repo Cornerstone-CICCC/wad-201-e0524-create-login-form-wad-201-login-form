@@ -12,7 +12,7 @@
     <div class="full-view">
 
       <div class="side-img">
-        <img class="main-img" src="images/side-image.jpg">
+        <!-- <img class="main-img" src="images/side-image.jpg"> -->
       </div>
 
       <div class="login-container">
@@ -33,24 +33,30 @@
         
             <h3>E-mail</h3>
               <input 
-                class="email-form" 
-                type="text" 
+                class="email-form"
+                type="text"
+                name="email"
+                id="email"
                 placeholder="Type your email">
               </input>
           
             <h3>Password</h3>
               <input 
-                class="password-form" 
-                type="text" 
+                class="password-form"
+                type="password"
+                name="password"
+                id="paswword"
                 placeholder="Type your password">
               </input>
+              
             
 
             <div class="remindme-section forgot-password">
-              <input type="checkbox" class="remindme">
-              </input>
+             <div class="begin">
+                <input type="checkbox" name="checkbox" id="checkbox"/>
+                <label for="checkbox" class="normal">Remind me</label>
+             </div>
               
-              <p class="normal">Remind me</p>
               <p class="bold">Forgot my password</p>
             </div>
 

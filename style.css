@@ -1,6 +1,7 @@
 body {
     margin: 0;
     padding: 0;
+    /* height: 100vh; */
     box-sizing: border-box;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #1c1c1b;
@@ -23,12 +24,41 @@ body {
 
 .side-img {
     grid-area: img;
+    max-width: 100%;
+    height: 100vh;
     background-image: url(../create-login-form-KevinPatino/images/side-image.jpg);
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
     background-color: #1c1c1b;
 }
+
+@media only screen and (max-width: 700px) {
+
+    .full-view {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+        "full";
+        }
+
+    .login-container {
+    grid-area: full;
+
+    }
+
+    .login-form-inner {
+        background-color: #1c1c1b;
+        margin: 0 !important;
+        padding: 0;
+    }
+
+    .login-form {
+        margin: 3% !important;
+    }
+
+}
+
 
 .logo {
     display: flex;
@@ -65,7 +95,8 @@ h1, h2, h3, p {
 
 .login-form-inner {
     margin: 10% 10%;
-    border: dotted 1px greenyellow;
+    /* border: dotted 1px greenyellow; */
+    min-width: 80%;
 }
 
 .log-in-logo {
@@ -98,20 +129,33 @@ h3 {
     font-size: 14px;
     background-image: url("images/mail.svg");
     background-repeat: no-repeat;
-    background-position: 2px 2px;
+    background-position: 8px 5px;
+    background-size: 15px;
     width: 100%;
     margin-bottom: 25px;
+    padding-left: 30px;
+    background-color: transparent;
+    height: 30px;
+    color: whitesmoke;
+    border: 1px solid gray;
 }
 
 .password-form {
+    display: flex;
     box-sizing: border-box;
     border-radius: 4px;
     font-size: 14px;
     background-image: url("images/lock.svg");
     background-repeat: no-repeat;
-    background-position: 2px 2px;
+    background-position: 8px 5px;
+    background-size: 15px;
     width: 100%;
     margin-bottom: 15px;
+    padding-left: 30px;
+    background-color: transparent;
+    height: 30px;
+    color: whitesmoke;
+    border: 1px solid grey;
 }
 
 .email-img, .lock-icon, .eye-icon {
@@ -126,13 +170,20 @@ h3 {
 .remindme-section {
     display: flex;
     margin-bottom: 1em;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+#checkbox {
+    margin: 0;
+    accent-color: gold;
+    color: #1c1c1b;
 }
 
 .remindme-section .normal {
-    display: flex;
-    margin: 0;
-    font-size: 0.8em;
-    font-weight: 100;
+    color: whitesmoke;
+    font-size: 14px;
 }
 
 .remindme-section .bold {
@@ -142,6 +193,7 @@ h3 {
     font-size: 0.8em;
     font-weight: 500;
     color: gold;
+    
 }
 
 .loging-button {
@@ -157,7 +209,7 @@ button {
     background-color: gold;
     border-style: none;
     border-radius: 3px;
-    padding: 1em ;
+    padding: 8px;
     font-weight: 800;
     width: 100%
 }
@@ -174,19 +226,5 @@ button {
     padding-left: 5px;
 }
 
-@media only screen and (max-width: 600px) {
-    body {
-        background-color: #1c1c1b;
-    }
-
-    .login form {
-        margin: 0;
-        background-color: #1c1c1b;
-    }
-
-    .side img {
-        visibility: hidden;
-    }
-}
 
 
