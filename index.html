@@ -4,8 +4,78 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="style.css" />
     <title>Document</title>
   </head>
-  <body></body>
+  <body>
+    
+    <div class="full-view">
+
+      <div class="side-img">
+        <!-- <img class="main-img" src="images/side-image.jpg"> -->
+      </div>
+
+      <div class="login-container">
+
+        <div class="logo">
+          <img class="logo-img" src="images/favicon.ico">
+          <h1>camp-in</h1>
+        </div>
+
+        <div class="login-form">
+          <div class="login-form-inner"> 
+            <div class="log-in-logo">
+              <img class="login-icon" src="images/log-in.svg">
+              <h2>Login</h2>
+            </div>
+              <p class="login-text">Insert your information below.</p>
+          
+        
+            <h3>E-mail</h3>
+              <input 
+                class="email-form"
+                type="text"
+                name="email"
+                id="email"
+                pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
+                placeholder="Type your email"
+                autocomplete="off">
+              </input>
+          
+            <h3>Password</h3>
+              <div class="password-contain">
+                <img class="eye-icon-off" id="eye-icon-off" src="images/eye.svg">
+                <!-- <img class="eye-hidden" id="eye-hidden" src="images/eye-hide-svgrepo-com.svg"> -->
+              <input 
+                class="password-form"
+                type="password"
+                name="password"
+                id="password"
+                placeholder="Type your password">
+              </input>
+              </div>
+            
+
+            <div class="remindme-section forgot-password">
+             <div class="begin">
+                <input type="checkbox" name="checkbox" id="checkbox"/>
+                <label for="checkbox" class="normal">Remind me</label>
+             </div>
+              
+              <p class="bold">Forgot my password</p>
+            </div>
+
+            <div class="login-button">
+              <button class="login-but" name="login-but" id="login-but">LOGIN</button>
+              <p class="login-button-text">Don't have an account?   <span class="bold">  Sign up!</span></p>
+            </div>
+
+          </div> 
+        </div>
+  
+    </div>
+
+    <script src="script.js"></script>
+
+  </body>
 </html>
