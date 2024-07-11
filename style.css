@@ -141,7 +141,8 @@ h3 {
 }
 
 .focus-email {
-    border: 2px solid gold;
+    outline: transparent;
+    border: 2px solid gold !important;
     background-image: url("images/mail-focus.svg");
     background-repeat: no-repeat;
     background-position: 8px 5px;
@@ -168,6 +169,7 @@ h3 {
 }
 
 .focus-pass {
+    outline: transparent;
     border: 2px solid gold;
     background-image: url("images/lock-focus.svg");
     background-repeat: no-repeat;
@@ -182,8 +184,24 @@ h3 {
     padding: 0.2em;
 }
 
-.eye-icon {
-    padding-left: 12em;
+/* .eye-icon-off {
+    display: block;
+    cursor: pointer;
+} */
+
+/* #eye-hidden {
+    display: none;
+    opacity: 30%;
+    filter: brightness();
+    width: 25px;
+    margin: 0;
+} */
+
+.on {
+    position: absolute;
+    padding: 5px 5px;
+    right: 910px;
+    cursor: pointer;
 }
 
 .remindme-section {
@@ -198,6 +216,7 @@ h3 {
     margin: 0;
     accent-color: gold;
     color: #1c1c1b;
+    cursor: pointer;
 }
 
 .remindme-section .normal {
@@ -230,7 +249,8 @@ button {
     border-radius: 3px;
     padding: 8px;
     font-weight: 800;
-    width: 100%
+    width: 100%;
+    cursor: pointer;
 }
 
 .login-button p {

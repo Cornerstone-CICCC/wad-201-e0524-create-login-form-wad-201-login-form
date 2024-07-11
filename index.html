@@ -37,10 +37,15 @@
                 type="text"
                 name="email"
                 id="email"
-                placeholder="Type your email">
+                pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
+                placeholder="Type your email"
+                autocomplete="off">
               </input>
           
             <h3>Password</h3>
+              <div class="password-contain">
+                <img class="eye-icon-off" id="eye-icon-off" src="images/eye.svg">
+                <!-- <img class="eye-hidden" id="eye-hidden" src="images/eye-hide-svgrepo-com.svg"> -->
               <input 
                 class="password-form"
                 type="password"
@@ -48,7 +53,7 @@
                 id="password"
                 placeholder="Type your password">
               </input>
-              
+              </div>
             
 
             <div class="remindme-section forgot-password">
